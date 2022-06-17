@@ -24,6 +24,23 @@ impl Color {
     }
 }
 
+pub enum RequestType {
+    Start,
+    Move,
+    End
+}
+
+pub struct Request {
+    /// Game Object describing the game being played.
+    game: Game,
+    /// Turn number of the game being played (0 for new games).
+    turn: usize,
+    /// Board Object describing the game board on this turn
+    board: Board,
+    /// Battlesnake Object describing your Battlesnake.
+    you: Battlesnake,
+}
+
 pub enum Head {
     Default,
     Beluga,
