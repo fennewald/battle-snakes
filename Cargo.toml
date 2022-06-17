@@ -1,0 +1,11 @@
+[package]
+name = "battle-snakes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+color-eyre = "0.5"
+dashmap = "5.3.4"
+tokio = { version = "1.19.2", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.2"
